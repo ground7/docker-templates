@@ -17,7 +17,6 @@
   <ExtraParams>--link openldap:PHPLDAPADMIN_LDAP_HOSTS</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1576299207</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This docker should be ran alongside openldap. It needs to be on the same custom docker network, and you must replace PHPLDAPADMIN_LDAP_HOSTS under extra parameters to match your variable set further down. It also requires that you supply a config.php. Here is an example config: https://raw.githubusercontent.com/commandprompt/phpldapadmin/master/config/config.php.example</Description>
