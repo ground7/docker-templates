@@ -4,22 +4,15 @@
   <Repository>ground7/calibre-web</Repository>
   <Registry>https://registry.hub.docker.com/u/ground7/calibre-web/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.lime-technology.com/topic/61046-support-calibre-web/</Support>
-  <Project/>
   <Overview>Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an &amp;lt;b&amp;gt;existing Calibre database&amp;lt;/b&amp;gt;.</Overview>
   <Category>MediaApp:Books MediaServer:Books</Category>
   <WebUI>http://[IP]:[PORT:8083]</WebUI>
   <TemplateURL>https://github.com/ground7/docker-templates/blob/master/calibre-web-books.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ground7/docker-templates/master/img/calibre-web-books.png</Icon>
   <ExtraParams>--link openldap:example.org</ExtraParams>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1577516447</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Description>Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an &amp;lt;b&amp;gt;existing Calibre database&amp;lt;/b&amp;gt;.</Description>
   <Networking>
     <Mode>bridge</Mode>
