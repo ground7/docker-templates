@@ -10,7 +10,7 @@
   <Overview>Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an &amp;lt;b&amp;gt;existing Calibre database&amp;lt;/b&amp;gt;.</Overview>
   <Category>MediaApp:Books MediaServer:Books</Category>
   <WebUI>http://[IP]:[PORT:8083]</WebUI>
-  <TemplateURL>https://github.com/ground7/docker-templates/blob/master/calibre-web-books.xml</TemplateURL>
+  <TemplateURL>https://github.com/ground7/docker-templates/master/calibre-web-books.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ground7/docker-templates/master/img/calibre-web-books.png</Icon>
   <ExtraParams>--link openldap:example.org</ExtraParams>
   <Description>Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an &amp;lt;b&amp;gt;existing Calibre database&amp;lt;/b&amp;gt;.</Description>
