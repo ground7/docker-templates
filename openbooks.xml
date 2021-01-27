@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>openbooks</Name>
+  <Repository>evanbuss/openbooks:latest</Repository>
+  <Registry>https://hub.docker.com/r/evanbuss/openbooks</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/evan-buss/openbooks</Project>
+  <Overview>Openbooks allows you to download ebooks from irc.irchighway.net quickly and easily.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7500]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/ground7/docker-templates/blob/master/img/openbooks.png?raw=true</Icon>
+  <PostArgs>--persist</PostArgs>
+  <Description>Openbooks allows you to download ebooks from irc.irchighway.net quickly and easily.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7500</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/downloads/irc</HostDir>
+      <ContainerDir>/books</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web UI" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">7500</Config>
+  <Config Name="Book Download Location" Target="/books" Default="/mnt/user/downloads/irc" Mode="rw" Description="Container Path: /books" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/irc</Config>
+</Container>
