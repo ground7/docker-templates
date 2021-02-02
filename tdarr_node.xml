@@ -115,4 +115,17 @@ Plugins here: https://github.com/HaveAGitGat/Tdarr_Plugins&#xD;
     </Variable>
   </Environment>
   <Labels/>
+  <Config Name="Server IP" Target="serverIP" Default="0.0.0.0" Mode="" Description="Server IP. Required if using Tdarr Nodes across your local network" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="Server Port" Target="8266" Default="8266" Mode="tcp" Description="Server Port" Type="Port" Display="always" Required="false" Mask="false">8266</Config>
+  <Config Name="Node IP" Target="nodeIP" Default="0.0.0.0" Mode="" Description="Node IP. Required if using Tdarr Nodes across your local network" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="Node Port" Target="8267" Default="8267" Mode="tcp" Description="Node Port" Type="Port" Display="always" Required="false" Mask="false">8267</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Configs" Target="/app/configs" Default="" Mode="rw" Description="Container Path: /app/configs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tdarr_node/config</Config>
+  <Config Name="Logs" Target="/app/logs" Default="" Mode="rw" Description="Container Path: /app/logs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tdarr_node/logs</Config>
+  <Config Name="Media Library" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/local/</Config>
+  <Config Name="Transcode Cache" Target="/temp" Default="" Mode="rw" Description="Container Path: /temp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/tdarr_transcode/</Config>
+  <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices (Optional - Requires Nvidia GPU and Unraid Nvidia build)" Type="Variable" Display="always" Required="false" Mask="false">GPU-01981fdf-d4b2-4e74-ed8c-c3dcb8629146</Config>
+  <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="Container Variable: NVIDIA_DRIVER_CAPABILITIES" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="Node ID" Target="nodeID" Default="" Mode="" Description="Container Variable: nodeID" Type="Variable" Display="always" Required="false" Mask="false">LoyalSlaveNode</Config>
 </Container>
