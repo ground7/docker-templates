@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>telly-dev-ffmpeg</Name>
+  <Name>telly</Name>
   <Repository>tellytv/telly:dev-ffmpeg</Repository>
   <Registry>https://hub.docker.com/r/tellytv/telly/~/dockerfile/</Registry>
   <Network>bridge</Network>
