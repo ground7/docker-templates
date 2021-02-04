@@ -108,7 +108,7 @@ Plugins here: https://github.com/HaveAGitGat/Tdarr_Plugins&#xD;
       <Mode/>
     </Variable>
     <Variable>
-      <Value>LoyalSlaveNode</Value>
+      <Value>Node1</Value>
       <Name>nodeID</Name>
       <Mode/>
     </Variable>
@@ -126,5 +126,5 @@ Plugins here: https://github.com/HaveAGitGat/Tdarr_Plugins&#xD;
   <Config Name="Transcode Cache" Target="/temp" Default="" Mode="rw" Description="Container Path: /temp" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/tdarr_transcode/</Config>
   <Config Name="Nvidia Visible Devices" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="Nvidia Visible Devices (Optional - Requires Nvidia GPU and Unraid Nvidia build)" Type="Variable" Display="always" Required="false" Mask="false">GPU-XXXX</Config>
   <Config Name="Nvidia Driver Capabilities" Target="NVIDIA_DRIVER_CAPABILITIES" Default="all" Mode="" Description="Container Variable: NVIDIA_DRIVER_CAPABILITIES" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
-  <Config Name="Node ID" Target="nodeID" Default="" Mode="" Description="Container Variable: nodeID" Type="Variable" Display="always" Required="false" Mask="false">LoyalSlaveNode</Config>
+  <Config Name="Node ID" Target="nodeID" Default="" Mode="" Description="Container Variable: nodeID" Type="Variable" Display="always" Required="false" Mask="false">Node1</Config>
 </Container>
