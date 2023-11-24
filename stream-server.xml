@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>stream-server</Name>
+  <Repository>ghcr.io/ground7/stream-server:main</Repository>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/ground7/stream-server</Project>
+  <Overview>Stream a video over RTSP</Overview>
+  <Category/>
+  <TemplateURL/>
+  <Icon>https://static.vecteezy.com/system/resources/previews/006/748/025/original/icon-of-fireplace-in-flat-style-vector.jpg</Icon>
+  <PostArgs>fireplace.mp4 --loop :sout=#gather:rtp{sdp=rtsp://:8554/} :network-caching=1500 :sout-all :sout-keep</PostArgs>
+  <Description>Stream a video over RTSP</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8554</HostPort>
+        <ContainerPort>8554</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/media/local/streams</HostDir>
+      <ContainerDir>/opt/vlc-media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="RTSP" Target="8554" Default="8554" Mode="tcp" Description="Container Port: 8554" Type="Port" Display="always" Required="true" Mask="false">8554</Config>
+  <Config Name="Media Mount" Target="/opt/vlc-media" Default="/mnt/user/media/local/streams" Mode="rw" Description="Container Path: /opt/vlc-media" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/local/streams</Config>
+</Container>
